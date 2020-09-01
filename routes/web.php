@@ -25,6 +25,8 @@ Route::get('/post', function() {
     return view('post');
 });
 
+Route::get('/vote/{id}', 'HomeController@vote')->name('vote');
+
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
 

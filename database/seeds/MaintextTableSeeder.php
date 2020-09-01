@@ -12,17 +12,26 @@ class MaintextTableSeeder extends Seeder
     public function run()
     {
         $param = [
-          'maintext' => 'これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。'
+            'title' => 'sample1',
+            'maintext' => 'これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。これはsampleテキスト１です。',
+            'hmm' => 0,
+            'agree' => 0,
         ];
         DB::table('maintext')->insert($param);
 
         $param = [
-            'maintext' => 'これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。'
+            'title' => 'sample2',
+            'maintext' => 'これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。これはsampleテキスト２です。',
+            'hmm' => 0,
+            'agree' => 0,
         ];
         DB::table('maintext')->insert($param);
 
         $param = [
-            'maintext' => 'これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。'
+            'title' => 'sample3',
+            'maintext' => 'これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。これはsampleテキスト３です。',
+            'hmm' => 0,
+            'agree' => 0,
         ];
         DB::table('maintext')->insert($param);
     }

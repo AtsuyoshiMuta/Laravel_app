@@ -4,18 +4,21 @@
     <list default="true" id="6570d5c2-ba27-4ff0-9839-cb4e501fc680" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/database.mysql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_163324_create_maintext_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_163324_create_maintext_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MaintextTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MaintextTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vote.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/maintext.frm" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/maintext.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/people.frm" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/people.frm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/people.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/people.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/users.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/mysql/innodb_index_stats.ibd" afterDir="false" />
@@ -214,7 +217,7 @@
       <workItem from="1598841290829" duration="2509000" />
       <workItem from="1598843943703" duration="14802000" />
       <workItem from="1598922729616" duration="1747000" />
-      <workItem from="1598927965408" duration="2770000" />
+      <workItem from="1598927965408" duration="11487000" />
     </task>
     <servers />
   </component>
@@ -247,5 +250,9 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="505" y="228" key="run.anything.popup/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1598497900023" />
+    <state x="505" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1598934677871">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="505" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1598934677871" />
   </component>
 </project>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use phpDocumentor\Reflection\Types\Integer;
 
 class HomeController extends Controller
 {
@@ -22,6 +23,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    public function vote($id=0)
+    {
+        $items = DB::table('maintext')->get();
+        return view('vote', ['item' => $items[$id-1]->maintext]);
+    }
 
     public function index(Request $request)
     {

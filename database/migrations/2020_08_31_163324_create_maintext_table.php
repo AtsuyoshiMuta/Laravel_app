@@ -16,7 +16,10 @@ class CreateMaintextTable extends Migration
         Schema::create('maintext', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title');
             $table->string('maintext');
+            $table->integer('hmm');
+            $table->integer('agree');
         });
     }
 
