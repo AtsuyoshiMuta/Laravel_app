@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6570d5c2-ba27-4ff0-9839-cb4e501fc680" name="Default Changelist" comment="" />
+    <list default="true" id="6570d5c2-ba27-4ff0-9839-cb4e501fc680" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/database.mysql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/people.frm" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/people.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/people.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/people.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/users.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/mysql/innodb_table_stats.ibd" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +36,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -125,6 +147,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1gd7hmQEytPuspdbwDyYVjJtQK6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -189,7 +212,9 @@
       <workItem from="1598780590355" duration="1556000" />
       <workItem from="1598838004112" duration="3095000" />
       <workItem from="1598841290829" duration="2509000" />
-      <workItem from="1598843943703" duration="5598000" />
+      <workItem from="1598843943703" duration="14802000" />
+      <workItem from="1598922729616" duration="1747000" />
+      <workItem from="1598927965408" duration="2770000" />
     </task>
     <servers />
   </component>
@@ -201,11 +226,15 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-875" y="205" key="#Docker/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1598440474523" />
-    <state x="538" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598853227582">
+    <state x="538" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598859682121">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="538" y="305" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1598588582413" />
-    <state x="538" y="329" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1598853227582" />
+    <state x="538" y="329" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1598859682121" />
+    <state x="578" y="258" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598858358443">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="258" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1598858358443" />
     <state x="-720" y="407" key="DockerComposeFileDialog" timestamp="1598441090087">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>

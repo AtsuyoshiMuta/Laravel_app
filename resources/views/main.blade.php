@@ -16,18 +16,11 @@
 
 <div class="container-fluid">
     <div class="row">
-        @for($i = 0; $i < 10; $i++)
-            <div class="col-6">
-            @component('components.card')
-                @slot('msg_title')
-                    caution!
-                @endslot
-
-                @slot('msg_content')
-                    本文
-                @endslot
-            @endcomponent
-            </div>
-        @endfor
+        @foreach($items as $item)
+{{--            @php--}}
+{{--            dd($item);--}}
+{{--            @endphp--}}
+        <p>{{$item->maintext}}</p>
+        @endforeach
     </div>
 </div>

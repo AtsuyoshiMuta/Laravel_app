@@ -21,11 +21,20 @@ Route::get('/main', function() {
    return view('main');
 });
 
+Route::get('/post', function() {
+    return view('post');
+});
+
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
 
+Route::get('/main', 'HomeController@index');
+
+
 Route::get('hello/add', 'HelloController@add');
 Route::post('hello/add', 'HelloController@create');
+
+Route::post('/post', 'HomeController@create');
 
 Route::get('hello/edit', 'HelloController@edit');
 Route::post('hello/edit', 'HelloController@update');
