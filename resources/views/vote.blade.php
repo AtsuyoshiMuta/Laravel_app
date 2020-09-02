@@ -16,7 +16,7 @@
     <a href="{{route('main')}}">back</a>
     <div class="row justify-content-center">
         <div class="maintext">
-        {{$items[$id-1]->maintext}}
+        {{$item->maintext}}
         </div>
     </div>
     <div id="app">

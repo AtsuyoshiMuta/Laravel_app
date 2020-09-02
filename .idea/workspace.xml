@@ -4,15 +4,14 @@
     <list default="true" id="6570d5c2-ba27-4ff0-9839-cb4e501fc680" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/VoteButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/VoteButtons.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vote.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,7 @@
       <workItem from="1598843943703" duration="14802000" />
       <workItem from="1598922729616" duration="1747000" />
       <workItem from="1598927965408" duration="16524000" />
-      <workItem from="1599009250258" duration="13726000" />
+      <workItem from="1599009250258" duration="22844000" />
     </task>
     <servers />
   </component>

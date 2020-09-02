@@ -26,8 +26,8 @@ class HomeController extends Controller
 
     public function vote($id)
     {
-        $items = DB::table('maintext')->get();
-        return view('vote', ['items' => $items, 'id'=>$id]);
+        $item = DB::table('maintext')->where('id', $id)->first();
+        return view('vote', ['item' => $item, 'id'=>$id]);
     }
 
     public function index(Request $request)
@@ -61,7 +61,6 @@ class HomeController extends Controller
             'id' => $id,
         ];
         DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param);
-        return redirect('/main');
     }
 
     public function update1($id)
@@ -73,6 +72,5 @@ class HomeController extends Controller
             'id' => $id,
         ];
         DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param);
-        return redirect('/main');
     }
 }

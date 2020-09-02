@@ -1,6 +1,8 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <style>
     form{
+        margin: 40px auto;
+        padding-left: 100px;
         margin-top: 50px;
     }
 
@@ -12,7 +14,7 @@
     }
 
     .card{
-        boder: solid 1px;
+        border: solid 1px;
         margin: 10px;
     }
 
@@ -21,13 +23,13 @@
     }
 </style>
 
-<form class="">
-    @csrf
-    <input class="rounded-pill" type="text">
-    <input class="rounded-pill" type="submit" value="search">
-</form>
+<div class="container">
+    <form class="">
+        @csrf
+        <input class="rounded-pill" type="text">
+        <input class="rounded-pill" type="submit" value="search">
+    </form>
 
-<div class="container-fluid">
     <div class="row justify-content-center">
         @foreach($items as $item)
             <div class="col-5 card">
