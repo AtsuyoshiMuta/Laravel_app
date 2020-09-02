@@ -1980,12 +1980,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "vote-buttons",
   props: {
@@ -6443,7 +6437,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.btn[data-v-5cf4509c]{\n    width: 200px;\n    height: 200px;\n    border-radius: 50%;\n    color: white;\n    background-color: #1b4b72;\n    margin: 20px 50px;\n}\n", ""]);
+exports.push([module.i, "\n.hmm[data-v-5cf4509c]{\n    margin-left: 50px;\n}\n.agree[data-v-5cf4509c]{\n    margin-right: 50px;\n}\n.btn[data-v-5cf4509c]{\n    font-size: 50px;\n    line-height: 180px;\n    width: 200px;\n    height: 200px;\n    border-radius: 50%;\n    color: white;\n    background-color: #1b4b72;\n    border-width: 3px;\n    margin: 20px 100px;\n}\n.btn[data-v-5cf4509c]:hover{\n    background-color: white;\n    border-color: #1b4b72;\n    border-width: 3px;\n    color: #1b4b72;\n}\n", ""]);
 
 // exports
 
@@ -38322,23 +38316,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "div",
-          { staticClass: "hmm btn mx-auto", on: { click: _vm.vote0 } },
-          [_vm._v("\n                hmm…\n            ")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "div",
-          { staticClass: "agree btn mx-auto", on: { click: _vm.vote1 } },
-          [_vm._v("\n                agree!\n            ")]
-        )
-      ])
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "btn mx-auto", on: { click: _vm.vote0 } }, [
+      _vm._v("\n        hmm…\n    ")
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "btn mx-auto", on: { click: _vm.vote1 } }, [
+      _vm._v("\n        agree!\n    ")
     ])
   ])
 }

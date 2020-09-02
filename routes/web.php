@@ -32,8 +32,7 @@ Route::post('/update1/{id}', 'HomeController@update1')->name('update1');
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
 
-Route::get('/main', 'HomeController@index');
-
+Route::get('/main', 'HomeController@index')->name('main');
 
 Route::get('hello/add', 'HelloController@add');
 Route::post('hello/add', 'HelloController@create');

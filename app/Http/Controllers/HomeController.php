@@ -54,35 +54,25 @@ class HomeController extends Controller
 
     public function update0($id)
     {
-        $items = DB::table('maintext')->get();
+        $item = DB::table('maintext')->where('id', $id)->first();
         $param = [
-            'hmm' => $items[$id]->hmm + 1,
-            'agree' => $items[$id]->agree,
+            'hmm' => $item->hmm + 1,
+            'agree' => $item->agree,
             'id' => $id,
         ];
-//        $param = [
-//            'hmm' => $request->hmm,
-//            'agree' => $request->agree,
-//            'id' => $id,
-//        ];
-        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param); //id番目の行だけアップデートするような処理が必要では？
+        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param);
         return redirect('/main');
     }
 
     public function update1($id)
     {
-        $items = DB::table('maintext')->get();
+        $item = DB::table('maintext')->where('id', $id)->first();
         $param = [
-            'hmm' => $items[$id]->hmm,
-            'agree' => $items[$id]->agree + 1,
+            'hmm' => $item->hmm,
+            'agree' => $item->agree + 1,
             'id' => $id,
         ];
-//        $param = [
-//            'hmm' => $request->hmm,
-//            'agree' => $request->agree,
-//            'id' => $id,
-//        ];
-        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param); //id番目の行だけアップデートするような処理が必要では？
+        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param);
         return redirect('/main');
     }
 }

@@ -1,16 +1,10 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col">
-                <div class="hmm btn mx-auto" @click="vote0">
-                    hmm…
-                </div>
-            </div>
-            <div class="col">
-                <div class="agree btn mx-auto" @click="vote1">
-                    agree!
-                </div>
-            </div>
+    <div class="row">
+        <div class="btn mx-auto" @click="vote0">
+            hmm…
+        </div>
+        <div class="btn mx-auto" @click="vote1">
+            agree!
         </div>
     </div>
 </template>
@@ -41,12 +35,30 @@
 </script>
 
 <style scoped>
+.hmm{
+    margin-left: 50px;
+}
+
+.agree{
+    margin-right: 50px;
+}
+
 .btn{
+    font-size: 50px;
+    line-height: 180px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     color: white;
     background-color: #1b4b72;
-    margin: 20px 50px;
+    border-width: 3px;
+    margin: 20px 100px;
+}
+
+.btn:hover{
+    background-color: white;
+    border-color: #1b4b72;
+    border-width: 3px;
+    color: #1b4b72;
 }
 </style>

@@ -7,10 +7,13 @@
         background-color: #eee;
         margin-top: 60px;
     }
+    a:hover{
+        text-decoration: none;
+    }
 </style>
 
 <div class="container">
-    <a>back</a>
+    <a href="{{route('main')}}">back</a>
     <div class="row justify-content-center">
         <div class="maintext">
         {{$items[$id-1]->maintext}}
