@@ -52,13 +52,37 @@ class HomeController extends Controller
 //        return view('',['form' => $item[0]]);
 //    }
 
-    public function update(Request $request, $id=0)
+    public function update0($id)
     {
+        $items = DB::table('maintext')->get();
         $param = [
-            'hmm' => $request->hmm,
-            'agree' => $request->agree,
+            'hmm' => $items[$id]->hmm + 1,
+            'agree' => $items[$id]->agree,
+            'id' => $id,
         ];
-        DB::update('update maintext set hmm = :hmm, agree = :agree', $param); //id番目の行だけアップデートするような処理が必要では？
+//        $param = [
+//            'hmm' => $request->hmm,
+//            'agree' => $request->agree,
+//            'id' => $id,
+//        ];
+        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param); //id番目の行だけアップデートするような処理が必要では？
+        return redirect('/main');
+    }
+
+    public function update1($id)
+    {
+        $items = DB::table('maintext')->get();
+        $param = [
+            'hmm' => $items[$id]->hmm,
+            'agree' => $items[$id]->agree + 1,
+            'id' => $id,
+        ];
+//        $param = [
+//            'hmm' => $request->hmm,
+//            'agree' => $request->agree,
+//            'id' => $id,
+//        ];
+        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param); //id番目の行だけアップデートするような処理が必要では？
         return redirect('/main');
     }
 }

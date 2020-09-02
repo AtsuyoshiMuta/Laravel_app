@@ -17,8 +17,12 @@
         </div>
     </div>
     <div id="app">
-        <vote-buttons v-bind:hmm="{{$items[$id-1]->hmm}}" v-bind:hmm="{{$items[$id-1]->agree}}"></vote-buttons>
+        <vote-buttons
+            url0="{{route('update0', ['id'=>$id])}}"
+            url1="{{route('update1', ['id'=>$id])}}">
+        </vote-buttons>
     </div>
+
 </div>
 
 <script src="{{ mix('js/app.js') }}"></script>

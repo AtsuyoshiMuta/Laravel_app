@@ -19,32 +19,22 @@
     export default {
         name: "vote-buttons",
         props: {
-                hmm: 0,
-                agree: 0,
-                url: '', //DBにpostするための名前付きルートのurl
+                url0: '',
+                url1: '',
         },
         created() {
             console.log('Component mounted.')
         },
         methods: {
             vote0() {
-                this.hmm += 1;
-                axios.post(this.url, {
-                    hmm: this.hmm,
-                    agree: this.agree,
-                }).then((response)=>{
-
+                axios.post(this.url0).then((response)=>{
+                    alert('Your vote is accepted!');
                 }) //親要素からphp変数を展開して名前付きルートのurlを受け取っておくこと
             },
             vote1() {
-                this.agree += 1;
-                axios.post(this.url, {
-                    hmm: this.hmm,
-                    agree: this.agree,
-                }).then((response)=>{
-
+                axios.post(this.url1).then((response)=>{
+                    alert('Your vote is accepted!');
                 })
-
             }
         }
     }

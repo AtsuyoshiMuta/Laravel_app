@@ -1989,28 +1989,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "vote-buttons",
   props: {
-    hmm: 0,
-    agree: 0,
-    url: '' //DBにpostするための名前付きルートのurl
-
+    url0: '',
+    url1: ''
   },
   created: function created() {
     console.log('Component mounted.');
   },
   methods: {
     vote0: function vote0() {
-      this.hmm += 1;
-      axios.post(this.url, {
-        hmm: this.hmm,
-        agree: this.agree
-      }).then(function (response) {}); //親要素からphp変数を展開して名前付きルートのurlを受け取っておくこと
+      axios.post(this.url0).then(function (response) {
+        alert('Your vote is accepted!');
+      }); //親要素からphp変数を展開して名前付きルートのurlを受け取っておくこと
     },
     vote1: function vote1() {
-      this.agree += 1;
-      axios.post(this.url, {
-        hmm: this.hmm,
-        agree: this.agree
-      }).then(function (response) {});
+      axios.post(this.url1).then(function (response) {
+        alert('Your vote is accepted!');
+      });
     }
   }
 });
