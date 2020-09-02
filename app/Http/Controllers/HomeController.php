@@ -24,10 +24,10 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
-    public function vote($id=0)
+    public function vote($id)
     {
         $items = DB::table('maintext')->get();
-        return view('vote', ['item' => $items[$id-1]->maintext]);
+        return view('vote', ['items' => $items, 'id'=>$id]);
     }
 
     public function index(Request $request)
@@ -42,6 +42,23 @@ class HomeController extends Controller
             'maintext' => $request->maintext,
         ];
         DB::table('maintext')->insert($param);
+        return redirect('/main');
+    }
+
+//    public function edit(Request $request)
+//    {
+//        $param = ['id' => $request->id];
+//        $item = DB::select('select * from people where id = :id', $param);
+//        return view('',['form' => $item[0]]);
+//    }
+
+    public function update(Request $request, $id=0)
+    {
+        $param = [
+            'hmm' => $request->hmm,
+            'agree' => $request->agree,
+        ];
+        DB::update('update maintext set hmm = :hmm, agree = :agree', $param); //id番目の行だけアップデートするような処理が必要では？
         return redirect('/main');
     }
 }
