@@ -26,8 +26,8 @@ Route::get('/post', function() {
 });
 
 Route::get('/vote/{id}', 'HomeController@vote')->name('vote');
-Route::post('/update0/{id}', 'HomeController@update0')->name('update0');
-Route::post('/update1/{id}', 'HomeController@update1')->name('update1');
+Route::post('/update/{id}', 'HomeController@update')->name('update');
+//Route::post('/update1/{id}', 'HomeController@update1')->name('update1');
 
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');

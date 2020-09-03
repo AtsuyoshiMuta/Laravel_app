@@ -1,9 +1,9 @@
 <template>
     <div class="row">
-        <div class="btn mx-auto" @click="vote0">
+        <div class="btn mx-auto" @click="vote(0)">
             hmm…
         </div>
-        <div class="btn mx-auto" @click="vote1">
+        <div class="btn mx-auto" @click="vote(1)">
             agree!
         </div>
     </div>
@@ -13,23 +13,24 @@
     export default {
         name: "vote-buttons",
         props: {
-                url0: '',
-                url1: '',
+                url: '',
         },
         created() {
             console.log('Component mounted.')
         },
         methods: {
-            vote0() {
-                axios.post(this.url0).then((response)=>{
-                    alert('Your vote is accepted!');
-                }) //親要素からphp変数を展開して名前付きルートのurlを受け取っておくこと
+            vote(val) {
+                const data = {
+                    'vote' : val
+                };
+                axios.post(this.url, data).then((response)=>{
+                    if (response.data['error'] === '') {
+                        alert('Your vote is accepted!');
+                    }else{
+                        alert(response.data['error']);
+                    }
+                });
             },
-            vote1() {
-                axios.post(this.url1).then((response)=>{
-                    alert('Your vote is accepted!');
-                })
-            }
         }
     }
 </script>

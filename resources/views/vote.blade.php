@@ -21,8 +21,7 @@
     </div>
     <div id="app">
         <vote-buttons
-            url0="{{route('update0', ['id'=>$id])}}"
-            url1="{{route('update1', ['id'=>$id])}}">
+            url="{{route('update', ['id'=>$id])}}">
         </vote-buttons>
     </div>
 

@@ -9,6 +9,13 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    public function userToVote()
+    {
+        return $this->hasMany(Vote::class);
+    }
+
+
+    //ここから認証関係のメソッド：編集不可
     use Notifiable;
 
     /**

@@ -1983,21 +1983,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "vote-buttons",
   props: {
-    url0: '',
-    url1: ''
+    url: ''
   },
   created: function created() {
     console.log('Component mounted.');
   },
   methods: {
-    vote0: function vote0() {
-      axios.post(this.url0).then(function (response) {
-        alert('Your vote is accepted!');
-      }); //親要素からphp変数を展開して名前付きルートのurlを受け取っておくこと
-    },
-    vote1: function vote1() {
-      axios.post(this.url1).then(function (response) {
-        alert('Your vote is accepted!');
+    vote: function vote(val) {
+      var data = {
+        'vote': val
+      };
+      axios.post(this.url, data).then(function (response) {
+        if (response.data['error'] === '') {
+          alert('Your vote is accepted!');
+        } else {
+          alert(response.data['error']);
+        }
       });
     }
   }
@@ -38317,13 +38318,31 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "btn mx-auto", on: { click: _vm.vote0 } }, [
-      _vm._v("\n        hmm…\n    ")
-    ]),
+    _c(
+      "div",
+      {
+        staticClass: "btn mx-auto",
+        on: {
+          click: function($event) {
+            return _vm.vote(0)
+          }
+        }
+      },
+      [_vm._v("\n        hmm…\n    ")]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "btn mx-auto", on: { click: _vm.vote1 } }, [
-      _vm._v("\n        agree!\n    ")
-    ])
+    _c(
+      "div",
+      {
+        staticClass: "btn mx-auto",
+        on: {
+          click: function($event) {
+            return _vm.vote(1)
+          }
+        }
+      },
+      [_vm._v("\n        agree!\n    ")]
+    )
   ])
 }
 var staticRenderFns = []

@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use phpDocumentor\Reflection\Types\Integer;
+
 
 class HomeController extends Controller
 {
@@ -52,25 +55,29 @@ class HomeController extends Controller
 //        return view('',['form' => $item[0]]);
 //    }
 
-    public function update0($id)
+    public function update(Request $request, $id)
     {
         $item = DB::table('maintext')->where('id', $id)->first();
         $param = [
-            'hmm' => $item->hmm + 1,
-            'agree' => $item->agree,
-            'id' => $id,
+            'hmm' => $item->hmm - ceil($request->vote - 1),
+            'agree' => $item->agree + $request->vote,
+            'maintext_id' => $id,
         ];
-        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param);
-    }
-
-    public function update1($id)
-    {
-        $item = DB::table('maintext')->where('id', $id)->first();
-        $param = [
-            'hmm' => $item->hmm,
-            'agree' => $item->agree + 1,
-            'id' => $id,
-        ];
-        DB::update('update maintext set hmm = :hmm, agree = :agree where id = :id', $param);
+        $user_id = Auth::id();
+        $voted = DB::table('vote')->where('user_id', $user_id)->where('maintext_id', $param['maintext_id'])->first();
+        if (isset($voted)) {
+            return response()->json([
+                'error' => 'You have already voted.'
+            ]);
+        } else {
+            DB::update('update maintext set hmm = :hmm, agree = :agree where id = :maintext_id', $param);
+            DB::table('vote')->insert([
+                'user_id' => $user_id,
+                'maintext_id' => $id,
+                'results' => 0]);
+            return response()->json([
+                'error' => ''
+            ]);
+        }
     }
 }

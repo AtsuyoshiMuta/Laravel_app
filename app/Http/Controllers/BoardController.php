@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Board;
+use App\Board; //use App\Board as Boardと同じ意味 = Boardという一言でApp\Boardを呼び出せる．
 use Illuminate\Http\Request;
 
 class BoardController extends Controller

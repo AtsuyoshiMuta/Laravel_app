@@ -14,13 +14,13 @@ class Board extends Model
         'message' => 'required',
     );
 
-    public function getData()
-    {
-        return $this->id . ': ' . $this->title . '(' . $this->person->name . ')';
-    }
-
     public function person()
     {
         return $this->belongsTo('App\Person');
+    }
+
+    public function getData()
+    {
+        return $this->id . ': ' . $this->title . '(' . $this->person->name . ')';
     }
 }
