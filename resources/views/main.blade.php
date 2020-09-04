@@ -1,8 +1,6 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <style>
     form{
-        margin: 40px auto;
-        padding-left: 100px;
         margin-top: 50px;
     }
 
@@ -13,9 +11,20 @@
         /*background:none;*/
     }
 
+    .btn{
+        color: #5a6268;!important;
+        margin: 40px 0px 0px 350px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
     .card{
         border: solid 1px;
         margin: 10px;
+    }
+
+    .btn > a{
+        color: #5a6268;
     }
 
     a:hover{
@@ -24,11 +33,18 @@
 </style>
 
 <div class="container">
-    <form class="">
-        @csrf
-        <input class="rounded-pill" type="text">
-        <input class="rounded-pill" type="submit" value="search">
-    </form>
+    <div class="row">
+        <form class="col-6">
+            @csrf
+            <input class="rounded-pill" type="text">
+            <input class="rounded-pill" type="submit" value="search">
+        </form>
+        <div class="col">
+            <div class="btn">
+                <a href="{{route('post')}}">New post.</a>
+            </div>
+        </div>
+    </div>
 
     <div class="row justify-content-center">
         @foreach($items as $item)

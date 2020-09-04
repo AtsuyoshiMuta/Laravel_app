@@ -23,11 +23,14 @@ Route::get('/', function () {
 
 Route::get('/post', function() {
     return view('post');
-});
+})->name('post');
+Route::post('/post', 'HomeController@post');
 
 Route::get('/vote/{id}', 'HomeController@vote')->name('vote');
 Route::post('/update/{id}', 'HomeController@update')->name('update');
-//Route::post('/update1/{id}', 'HomeController@update1')->name('update1');
+
+Route::get('/delete/{id}','HomeController@del');
+Route::post('/delete/{id}', 'HomeController@deletePost')->name('delete');
 
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
@@ -36,8 +39,6 @@ Route::get('/main', 'HomeController@index')->name('main');
 
 Route::get('hello/add', 'HelloController@add');
 Route::post('hello/add', 'HelloController@create');
-
-Route::post('/post', 'HomeController@create');
 
 Route::get('hello/edit', 'HelloController@edit');
 Route::post('hello/edit', 'HelloController@update');

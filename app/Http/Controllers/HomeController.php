@@ -29,22 +29,39 @@ class HomeController extends Controller
 
     public function vote($id)
     {
+        $user_id = Auth::id();
         $item = DB::table('maintext')->where('id', $id)->first();
-        return view('vote', ['item' => $item, 'id'=>$id]);
+        return view('vote', ['item' => $item, 'id'=>$id, 'user_id' => $user_id]);
     }
 
-    public function index(Request $request)
+    public function index()
     {
         $items = DB::table('maintext')->get();
         return view('main', ['items' => $items]);
     }
 
-    public function create(Request $request)
+    public function post(Request $request)
     {
         $param = [
+            'poster_id' => Auth::id(),
+            'created_at' => date("Y-m-d H:i:s"),
+            'title' => $request->title,
             'maintext' => $request->maintext,
+            'hmm' => 0,
+            'agree' => 0,
         ];
+        Log::info('ok');
         DB::table('maintext')->insert($param);
+        return redirect('/main');
+    }
+
+    public function del($id) {
+        $item = DB::table('maintext')->where('id', $id)->first();
+        return view('delete', ['item' => $item]);
+    }
+
+    public function deletePost($id) {
+        DB::table('maintext')->where('id', $id)->delete();
         return redirect('/main');
     }
 

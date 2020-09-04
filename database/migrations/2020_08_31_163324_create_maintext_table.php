@@ -15,6 +15,7 @@ class CreateMaintextTable extends Migration
     {
         Schema::create('maintext', function (Blueprint $table) {
             $table->id();
+            $table->integer('poster_id');
             $table->timestamps();
             $table->string('title');
             $table->string('maintext');
