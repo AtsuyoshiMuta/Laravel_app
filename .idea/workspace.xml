@@ -20,31 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6570d5c2-ba27-4ff0-9839-cb4e501fc680" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Laravel_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Maintext.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Maintext.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Vote.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Vote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vote.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/boards.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/boards.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/people.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/people.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/users.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/vote.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/vote.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/mysql/innodb_index_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/mysql/innodb_table_stats.ibd" afterDir="false" />
@@ -257,7 +238,7 @@
       <workItem from="1599440065091" duration="356000" />
       <workItem from="1599441335148" duration="3562000" />
       <workItem from="1599454586641" duration="3482000" />
-      <workItem from="1599459917052" duration="10728000" />
+      <workItem from="1599459917052" duration="12733000" />
     </task>
     <servers />
   </component>
