@@ -34,9 +34,8 @@
 
 <div class="container">
     <div class="row">
-        <form class="col-6">
-            @csrf
-            <input class="rounded-pill" type="text">
+        <form class="col-6" action="/main" method="get">
+            <input class="rounded-pill" type="text" name="query">
             <input class="rounded-pill" type="submit" value="search">
         </form>
         <div class="col">

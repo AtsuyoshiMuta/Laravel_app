@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\person;
+use App\Person;
 use Illuminate\Http\Request;
 
 class PersonController extends Controller

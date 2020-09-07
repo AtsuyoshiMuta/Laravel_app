@@ -20,14 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6570d5c2-ba27-4ff0-9839-cb4e501fc680" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Laravel_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_163324_create_maintext_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_163324_create_maintext_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MaintextTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MaintextTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Maintext.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Maintext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Vote.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Vote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vote.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibdata1" afterDir="false" />
@@ -35,7 +40,6 @@
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/boards.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/boards.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/failed_jobs.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/items.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/maintext.frm" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/maintext.frm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/maintext.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/migrations.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/password_resets.ibd" afterDir="false" />
@@ -168,6 +172,15 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gd7hmQEytPuspdbwDyYVjJtQK6" />
@@ -185,6 +198,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -202,7 +216,7 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -210,11 +224,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -242,7 +251,13 @@
       <workItem from="1599009250258" duration="23077000" />
       <workItem from="1599041538413" duration="786000" />
       <workItem from="1599095654491" duration="22763000" />
-      <workItem from="1599181693852" duration="6199000" />
+      <workItem from="1599181693852" duration="16044000" />
+      <workItem from="1599202238070" duration="13059000" />
+      <workItem from="1599271436972" duration="1614000" />
+      <workItem from="1599440065091" duration="356000" />
+      <workItem from="1599441335148" duration="3562000" />
+      <workItem from="1599454586641" duration="3482000" />
+      <workItem from="1599459917052" duration="10728000" />
     </task>
     <servers />
   </component>
@@ -275,26 +290,29 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="605" y="226" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1599104127903" />
-    <state x="578" y="258" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598858358443">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="578" y="240" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599467979533">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
+    <state x="578" y="240" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1599213122247" />
     <state x="578" y="258" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1598858358443" />
+    <state x="578" y="240" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.947@0.23.1680.947" timestamp="1599467979533" />
     <state x="-720" y="407" key="DockerComposeFileDialog" timestamp="1598441090087">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-720" y="407" key="DockerComposeFileDialog/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1598441090087" />
-    <state x="159" y="142" key="SettingsEditor" timestamp="1598433318366">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state x="159" y="151" key="SettingsEditor" timestamp="1599209713182">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="159" y="151" key="SettingsEditor/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1599209713182" />
     <state x="159" y="142" key="SettingsEditor/0.23.1680.958@0.23.1680.958" timestamp="1598433318366" />
     <state x="505" y="228" key="run.anything.popup" timestamp="1598497900023">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="505" y="228" key="run.anything.popup/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1598497900023" />
-    <state x="505" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1599186610667">
+    <state x="505" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1599452083292">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="505" y="230" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1599186610667" />
+    <state x="505" y="230" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1599452083292" />
     <state x="505" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1598934677871" />
   </component>
 </project>

@@ -9,10 +9,37 @@ use Illuminate\Support\Facades\DB;
 
 class HelloController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, Response $response) //getされた時点で必ずrequestは受け取っているからあとはそれを変数に格納してやるだけで使える。・
     {
-        $items = DB::table('people')->orderBy('age', 'asc')->get();
-        return view('hello.index', ['items' => $items]);
+        $html = <<< EOF
+            <html>
+            <head>
+            <title>Hello/Index</title>
+            <style>
+            body {
+            font-size: 16px;
+            color: #999;
+            }
+            h1 {
+            font-size: 120px;
+            text-align: right;
+            color: #fafafa;
+            margin: -50px 0px -120px 0px;
+            }
+            </style>
+            </head>
+            <body>
+            <h3>Request</h3>
+            <pre>{$request}</pre>
+            <h3>Response</h3>
+            <pre>{$response}</pre>
+            <h3>Request->url()</h3>
+            <pre>{$request->url()}</pre>
+            </body>
+            </html>
+        EOF;
+            $response->setContent($html);
+            return $response;
     }
 
     public function post(Request $request)
@@ -35,13 +62,6 @@ class HelloController extends Controller
         ];
         DB::table('people')->insert($param);
         return redirect('/hello');
-    }
-
-    public function edit(Request $request)
-    {
-        $item = DB::table('people')
-            ->where('id', $request->id)->first();
-        return view('hello.edit', ['form' => $item]);
     }
 
     public function update(Request $request)

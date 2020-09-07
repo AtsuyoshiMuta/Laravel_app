@@ -10,7 +10,7 @@
 
     .btn{
         color: #5a6268;!important;
-        margin: 40px 0px 0px 350px;
+        margin: 40px 0 0 350px;
         border: solid 1px;
         border-radius: 5px;
     }
@@ -25,7 +25,7 @@
 </style>
 
 <div class="container">
-    <a href="{{route('main')}}">back</a>
+    <a href = "{{ route('main') }}">back</a>
     @if ($user_id === $item->poster_id)
         <div class="btn">
             <a href="/delete/{{$id}}">Dlete post.</a>
@@ -33,10 +33,8 @@
     @endif
 
 {{--    @php dd(strtotime($item->created_at) - time()) @endphp--}}
-    @if ((time() - strtotime($item->created_at)) / 86400 < 7)
-    <div>
+    @if ( !isset($item->created_at) or (time() - strtotime($item->created_at)) / 86400 < 7)
 
-    </div>
     <div class="row justify-content-center">
         <div class="maintext">
         {{$item->maintext}}

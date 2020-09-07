@@ -3,8 +3,10 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use phpDocumentor\Reflection\Types\Integer;
 
 class Vote extends Model
 {
-    public function
+    protected $table = 'vote';
+    protected $guarded = ['id'];
 }

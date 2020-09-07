@@ -17,44 +17,41 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/main', function() {
-//   return view('main');
-//});
+Route::get('/main', 'MaintextController@index')->name('main' );
+
+Route::get('/vote/{id}', 'VoteController@show')->name('vote');
+Route::post('/update/{id}', 'VoteController@updateCount')->name('update');
 
 Route::get('/post', function() {
     return view('post');
 })->name('post');
-Route::post('/post', 'HomeController@post');
+Route::post('/post', 'VoteController@create');
 
-Route::get('/vote/{id}', 'HomeController@vote')->name('vote');
-Route::post('/update/{id}', 'HomeController@update')->name('update');
+Route::get('/delete/{id}','VoteController@showDeleteItem');
+Route::post('/delete/{id}', 'VoteController@delete')->name('delete');
 
-Route::get('/delete/{id}','HomeController@del');
-Route::post('/delete/{id}', 'HomeController@deletePost')->name('delete');
+//Route::get('hello', 'HelloController@index');
+//Route::post('hello', 'HelloController@post');
 
-Route::get('hello', 'HelloController@index');
-Route::post('hello', 'HelloController@post');
 
-Route::get('/main', 'HomeController@index')->name('main');
-
-Route::get('hello/add', 'HelloController@add');
-Route::post('hello/add', 'HelloController@create');
-
-Route::get('hello/edit', 'HelloController@edit');
-Route::post('hello/edit', 'HelloController@update');
-
-Route::get('hello/del', 'HelloController@del');
-Route::post('hello/del', 'HelloController@remove');
-
-Route::get('hello/show', 'HelloController@show');
-
-Route::get('person', 'PersonController@index');
-Route::get('person/find', 'PersonController@find');
-Route::post('person/find', 'PersonController@search');
-
-Route::get('board', 'BoardController@index');
-Route::get('board/add', 'BoardController@add');
-Route::post('board/add', 'BoardController@create');
+//Route::get('hello/add', 'HelloController@add');
+//Route::post('hello/add', 'HelloController@create');
+//
+//Route::get('hello/edit', 'HelloController@edit');
+//Route::post('hello/edit', 'HelloController@update');
+//
+//Route::get('hello/del', 'HelloController@del');
+//Route::post('hello/del', 'HelloController@remove');
+//
+//Route::get('hello/show', 'HelloController@show');
+//
+//Route::get('person', 'PersonController@index');
+//Route::get('person/find', 'PersonController@find');
+//Route::post('person/find', 'PersonController@search');
+//
+//Route::get('board', 'BoardController@index');
+//Route::get('board/add', 'BoardController@add');
+//Route::post('board/add', 'BoardController@create');
 
 Auth::routes();
 
